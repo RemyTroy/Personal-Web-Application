@@ -1,0 +1,99 @@
+### CREATE five documents.
+POST http://localhost:3000/travels HTTP/1.1
+content-type: application/json
+
+{
+    "destination": "Tokyo",
+    "yearVisited": 2020,
+    "duration": 14,
+    "dateOfFlight": "2020-01-01",
+    "notes": "Explored Shibuya and Shinjuku."
+}
+
+
+### CREATE 2
+POST http://localhost:3000/travels HTTP/1.1
+content-type: application/json
+
+{
+    "destination": "Israel",
+    "yearVisited": 2021,
+    "duration": 10,
+    "dateOfFlight": "2021-05-15",
+    "notes": "Work trip at previous employer, loved the Dead Sea."
+}
+
+
+### CREATE 3
+POST http://localhost:3000/travels HTTP/1.1
+content-type: application/json
+
+{
+    "destination": "South Korea",
+    "yearVisited": 2022,
+    "duration": 15,
+    "dateOfFlight": "2022-08-03",
+    "notes": "Visited friends who are teaching English and explored the city."
+}
+
+
+### CREATE 4
+POST http://localhost:3000/travels HTTP/1.1
+content-type: application/json
+
+{
+    "destination": "London",
+    "yearVisited": 2023,
+    "duration": 7,
+    "dateOfFlight": "2023-01-10",
+    "notes": "Explored the amazing architecture and culture."
+}
+
+
+### CREATE 5
+POST http://localhost:3000/travels HTTP/1.1
+content-type: application/json
+
+{
+    "destination": "Paris",
+    "yearVisited": 2023,
+    "duration": 7,
+    "dateOfFlight": "2023-07-21",
+    "notes": "Visited the Eiffel Tower and Louvre Museum."
+}
+
+
+### RETRIEVE all documents.
+GET http://localhost:3000/travels HTTP/1.1
+
+
+
+
+### RETRIEVE a document by its ID.
+### Replace the following ID with one that exists in the collection.
+GET http://localhost:3000/travels/656d3d1b2072e82d1d25ec96 HTTP/1.1
+
+
+
+### UPDATE one document's year, by ID.
+### Replace the ID in the following request with one that exists
+### and update the year:
+PUT http://localhost:3000/travels/656d3d1b2072e82d1d25ec96 HTTP/1.1
+content-type: application/json
+
+{
+    "destination": "Tokyo",
+    "yearVisited": 2020,
+    "duration": 14,
+    "dateOfFlight": "2020-01-01",
+    "notes": "Extended stay and explored Shibuya, Shinjuku, and Akihabara."
+}
+
+### DELETE by ID (responds with nothing if successful):DELETE http://localhost:3000/travels/<replace_with_existing_id> HTTP/1.1
+DELETE http://localhost:3000/travels/656d3d1b2072e82d1d25ec96 HTTP/1.1
+
+
+
+
+### RETRIEVE all documents (responds with 4 or the original 5):
+GET http://localhost:3000/travels HTTP/1.1

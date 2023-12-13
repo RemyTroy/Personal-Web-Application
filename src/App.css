@@ -1,0 +1,428 @@
+
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+  /* @import 'node_modules/modern-normalize/modern-normalize.css';  npm install modern-normalize  Resets elements for browser consistency.  https://www.npmjs.com/package/modern-normalize */         
+  /* @import "component1.css";   Component-specific stylesheets, if any.   */
+  /* @import url(//fonts.googleapis.com/css?family=Font+Name); Add fonts from a hosted services like Google Fonts.   */
+  @import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Quicksand:wght@500&display=swap');
+  @import "~react-image-gallery/styles/css/image-gallery.css";
+
+/*   ----- Variables  -----  */
+:root {
+    --light-orange: rgba(242, 217, 141, 0.7); /* Lighter shade of orange */
+    --medium-orange: rgba(242, 178, 121, 0.7); /* Medium shade of orange */
+    --dark-orange: rgba(242, 147, 92, 0.6);  /* Darker shade of orange */
+    --accent-color: #bb9785; /* Accent color */
+    --transparent-orange: rgba(242, 179, 121, 0.5); /* Semi-transparent medium orange */
+    --body-text-color: #353d06; /* Darker shade of gray (or any suitable color) */
+    --dark-ocean-blue: #0a2342; /* Dark Ocean Blue color */
+  }
+  
+  
+  /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+  body {       /* Can alternatively define in html {}. */
+    background-color:;
+    background-image:url('images/Background-IMG-Dead-Sea.png');
+    background-size: 9000px 4200px;
+    color:var(--body-text-color);
+    font-family:'Quicksand', sans-serif; /* Define with at least one font name and its related generic family name.*/
+    font-weight: 500; 
+     margin: 0 auto;
+    padding:40px;
+    max-width: 960px;
+  }
+  
+  /*  ----- Page layout blocks -----  */
+  header {
+    font-family: 'Nosifer', cursive; /* Assign Nosifer font to headings */
+    font-weight: 600;
+    background-color: var(--light-orange);
+    padding:  10px 20px;
+    max-width: 830px;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+  }
+
+  
+  header img {
+    height: 150px; /* Resize the header image */
+    width: auto; /* Adjust width proportionally */
+    margin-left: 5%; /* Set left margin */
+    margin-right: 5%; /* Set right margin */
+  
+
+  }
+  main {
+    background-color: var(--medium-orange); /* Medium shade for better text readability */
+    padding: 50px;
+    margin-left: 5%; /* Set left margin */
+    margin-right: 5%; /* Set right margin */
+  }
+  section {}
+  article {}
+    #topic1 {}
+    #topic2 {}
+  div {}
+  aside {}
+  footer {
+    background-color: var(--dark-orange); /* Darker shade as background */
+    color: white; /* Legible color against dark background */
+    padding: 15px;
+    margin-right: 5%;
+    margin-left: 5%;
+    max-width: 960px;
+  }
+  
+  /* ----- Anchors ----- Text links */
+  a {}
+  a:link {}
+  a:hover {}
+  a:active {}
+  a:visited {}
+  
+  /*  ----- Navigation ----- Override text links for navigation only.  */
+  
+  nav {
+    display: flex; /* Optional: Use flex display */
+    justify-content: center;
+    align-items: center;
+  }
+  nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    border: 2px solid var(--medium-orange);
+    border-radius: 5px;
+    color: var(--body-text-color);
+    background-color: var(--accent-color);
+  }
+  nav a:hover {
+  background-color: var(--dark-orange);
+  color: var(--light-orange);
+  }
+
+  /* Add spacing between icon and text */
+nav a svg {
+  margin-right: 10px;
+}
+
+/* Make the icons slightly bigger */
+nav a svg {
+  font-size: 1em;
+}
+
+
+
+  /* Local Navigation with a class name */
+  .local {
+    display: flex;
+    justify-content: space-around; 
+  }
+  
+  .local a {
+    padding: 8px 15px;
+    margin: 0 8px;
+    text-decoration: none;
+    color: var(--body-text-color);
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+  }
+  
+  .local a:hover {
+    background-color: var(--dark-ocean-blue);
+    color: var(--light-orange);
+  }
+    
+  /*  -----  Typography  ----- */
+  p {}
+  br {}
+  ol, ul, dl {}
+  li {}
+  dt {}
+  dd {}
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nosifer', cursive;
+  } 
+  h1 {}
+  h2 {}
+  h3 {}
+  h4 {}
+  h5 {}
+  h6 {}
+  
+  abbr {}
+  acronym {}
+  address {}
+  blockquote {}
+    q {}
+    cite {}
+  em {}
+  hr {}
+  mark {}
+  s {}
+  span {}
+  strong {}
+  sub {}
+  sup {}
+  time {}
+  
+  /*  ----- Coding or instructional typography ----- */
+  pre {}
+  code {}
+  kbd {}
+  samp {}
+  var {}
+  del {} 
+  ins {}
+  
+  /*  ----- Table ----- */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  caption {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  thead {
+    background-color: var(--transparent-orange);
+    color: var(--dark-ocean-blue);
+    padding: 5px;
+  }
+  tbody {
+    padding: 10px; 
+  }
+  tfoot {
+  }
+  tr {}
+    tr:nth-child(even) {}
+  th {
+    padding: var(--cell-padding);
+    text-align: left;
+    border: 1px solid var(--dark-ocean-blue);
+    color: var(--body-text-color)
+  }
+  td {
+    padding: var(--cell-padding);
+    text-align: left;
+    border: 1px solid var(--dark-ocean-blue);
+    color: var(--body-text-color);
+  }
+    td:nth-child(1) {
+      font-weight: bold;
+    }
+  colgroup {}
+  data {}
+  datalist {}
+  
+  
+  /*  ----- Form ----- */
+  form {}
+  fieldset {
+    border: 1px solid var(--dark-ocean-blue); /* Border change */
+    margin: 15px 0; /* Adding margin to separate groups */
+    padding: 15px; /* Adding padding inside fieldset */
+    background-color: var(--transparent-orange); /* Background color change */
+    color: #0a2342;
+    border-radius: 10px;
+    border: 2px solid var(--dark-ocean-blue);
+  }
+    legend {
+      color: var(--dark-ocean-blue); /* Text color change */
+    }
+  label {
+    color: var(--body-text-color); /* Text color */
+    display: block; 
+    
+    width: 125px;
+    padding:  5px;
+    
+   
+  }
+  button {
+    background-color: var(--accent-color); /* Background color for buttons */
+    color: var(--dark-ocean-blue) ; /* Text color for buttons */
+    cursor: pointer; /* Showing pointer on hover */
+  }
+  input {
+    padding: 5px;
+  }
+
+  select {
+    background-color: var(--light-orange); /* Background color for select */
+  }
+    optgroup {}
+    option {}
+  textarea {
+    margin: 5px 0; /* Margin for form elements */
+    padding: 8px; /* Padding for typing area */
+    border: 1px solid var(--dark-ocean-blue); /* Border change for input */
+    background-color: var(--light-orange); /* Background color for textarea */
+    width: 95%;
+    height: 100px;
+
+  }
+  output {}
+  meter {}
+  progress {}
+  
+  :focus {
+    outline: none; /* Removing default focus outline */
+    border: 1px solid var(--accent-color); /* Border change on focus */
+}
+
+
+*::placeholder {
+  color: var(--dark-ocean-blue); 
+}
+
+#name,
+#email {
+  /* Adjust the appearance and layout of the name and email input fields */
+  padding: 10px;
+  border: 1px solid var(--dark-ocean-blue);
+  border-radius: 5px;
+  background-color: var(--light-orange); /* Set background color to transparent orange */
+  font-size: 14px;
+  color: var(--dark-ocean-blue);
+}
+
+#name:focus,
+#email:focus {
+  /* Adjust the appearance when the input is focused */
+  outline: none;
+  border: 1px solid var(--accent-color);
+}
+
+/* Styles for the "Additional Details" section */
+.additional-details {
+  /* Adjust the overall layout and appearance of the section */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--transparent-orange) ;
+  border: 2px solid var(--dark-ocean-blue);
+  border-radius: 10px;
+ }
+ 
+ .additional-details label {
+  /* Adjust the font size and appearance of the labels */
+  font-size: 16px;
+  color: var(--dark-ocean-blue);
+ }
+ 
+ .additional-details input[type="text"],
+ .additional-details textarea {
+  /* Adjust the appearance and layout of the input fields and textarea */
+  padding: 10px;
+  border: 1px solid var(--dark-ocean-blue);
+  border-radius: 5px;
+  background-color: white;
+  font-size: 14px;
+  color: var(--body-text-color);
+  resize: vertical;
+ }
+ 
+ .additional-details textarea {
+  /* Adjust the appearance and layout of the textarea */
+  height: 100px;
+  padding: 12px;
+ }
+ 
+ .additional-details input[type="submit"] {
+  /* Adjust the appearance and layout of the submit button */
+  background-color: var(--accent-color);
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+
+  
+  /* ----- Media ----- */
+  figure {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid var(--dark-orange);
+  border-radius: 10px;
+  background-color: var(--light-orange);
+  color: var(--body-text-color);
+  max-width: 250px;
+  width: calc(50% - 20px);
+  }
+    figcaption {
+      text-align: center;
+      margin-top: 10px;
+    }
+   
+    figure img {
+      width: 100%; /* To ensure the image fits within the figure */
+      border-bottom: 2px solid var(--dark-orange);
+      border-radius: 10px;
+      
+    }
+  svg {}
+  picture {}
+    source {}
+  iframe {}
+  video {}
+  audio {}
+  embed {}
+  object {}
+  
+  /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+  .gallery {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  }
+  
+
+  
+  .floatright {}
+  .floatleft {}
+  .center-middle {}
+  
+  .ten {}
+  .twenty {}
+  .thirty {}
+  .forty {}
+  .fifty {}
+  .sixty {}
+  .seventy {}
+  .eighty {}
+  
+  .radius {}
+  .circle {}
+  .boxshadow {}
+  .tshadow {} 
+  .gradient {}
+  .shape {}
+  
+  @keyframes App-logo {}
+  
+  /*   ===== TABLET  media query overrides mobile styles ===== */
+  @media all and (min-width: 600px) {}
+  
+  /*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+  @media all and (min-width: 1080px) {}
+  
+  /*   ===== PRINT  media query overrides previous styles =====  */
+  @media print {}
+
+ 
+  
