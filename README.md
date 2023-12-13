@@ -68,3 +68,62 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+# My Personal Website
+
+Welcome to my personal website! This web application is designed to showcase various aspects of my life, interests, and achievements. From travel lists to project galleries, contact forms to order pages, and a dive into topics I've learned in my CS 290 Web Development class, this site has it all.
+
+## Features
+
+### Travel List
+- Utilizes a MongoDB backend for CRUD operations.
+- Allows you to create, read, update, and delete items in your travel list.
+
+### Gallery Page
+- Features a React frontend showcasing fun pictures of me and my projects.
+- Provides an interactive and visually appealing way to explore my experiences.
+
+### Contact List
+- Uses EmailJS and Frontik to enable a contact form.
+- Allows visitors to fill in a message, which is then sent directly to my email.
+
+### Order Page
+- Offers a platform to order various products in bulk or small amounts.
+- Streamlined interface for easy and convenient ordering.
+
+### Topics Page
+- Dives into topics I learned in my CS 290 Web Development class.
+- Provides insights into my academic journey and the skills I've acquired.
+
+### Home Page
+- Details my career goals and aspirations.
+- Offers a comprehensive overview of who I am and what drives me in my professional life.
+
+## Technologies Used
+- MongoDB for backend data storage.
+- React for the frontend gallery page.
+- EmailJS and Frontik for the contact form.
+- HTML, CSS, and JavaScript for the overall structure and styling.
+- Node and Express, React, Usestate 
+
+## Installation
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Set up and configure MongoDB for the backend.
+4. Configure EmailJS and Frontik for the contact form.
+5. Run the application using `npm start`.
+
+## Usage
+1. Navigate to the respective pages to explore travel lists, galleries, contact forms, order pages, and more.
+2. Perform CRUD operations on the travel list.
+3. Explore the gallery showcasing fun pictures and projects.
+4. Reach out to me using the contact form.
+5. Place orders for various products.
+6. Check out the Topics page to delve into my web development class learnings.
+7. Visit the home page to learn about my career goals.
+
+
+
